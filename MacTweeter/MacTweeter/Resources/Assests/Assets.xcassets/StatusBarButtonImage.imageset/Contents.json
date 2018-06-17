@@ -2,12 +2,12 @@
   "images" : [
     {
       "idiom" : "mac",
-      "filename" : "Icon-App-20x20@1x.png",
+      "filename" : "Icon_32x32.png",
       "scale" : "1x"
     },
     {
       "idiom" : "mac",
-      "filename" : "Icon-App-20x20@2x.png",
+      "filename" : "Icon_32x32@2x.png",
       "scale" : "2x"
     }
   ],

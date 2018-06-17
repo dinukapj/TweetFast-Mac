@@ -7,7 +7,6 @@
 //
 
 import Cocoa
-import SwifterMac
 import Fabric
 import Crashlytics
 import Magnet
@@ -23,12 +22,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ notification: Notification) {
         
       ///   NSEvent.addLocalMonitorForEvents(matching: NSEvent.EventTypeMask.keyDown, handler: myKeyDownEvent)
-      
+        NSAppleEventManager.shared().setEventHandler(self, andSelector: #selector(AppDelegate.handleEvent(_:withReplyEvent:)), forEventClass: AEEventClass(kInternetEventClass), andEventID: AEEventID(kAEGetURL))
+        LSSetDefaultHandlerForURLScheme("tweetfastMgaE4QpxTM5GTPXRrIxZnwowt" as CFString, Bundle.main.bundleIdentifier! as CFString)
         
     Fabric.with([Crashlytics.self])
         
-       NSAppleEventManager.shared().setEventHandler(self, andSelector: #selector(AppDelegate.handleEvent(_:withReplyEvent:)), forEventClass: AEEventClass(kInternetEventClass), andEventID: AEEventID(kAEGetURL))
-        LSSetDefaultHandlerForURLScheme("swifter" as CFString, Bundle.main.bundleIdentifier! as CFString)
+        
+      
+   //    NSAppleEventManager.shared().setEventHandler(self, andSelector: #selector(AppDelegate.handleEvent(_:withReplyEvent:)), forEventClass: AEEventClass(kInternetEventClass), andEventID: AEEventID(kAEGetURL))
+        //LSSetDefaultHandlerForURLScheme("swifter" as CFString, Bundle.main.bundleIdentifier! as CFString)
         
         if let button = statusItem.button {
             button.image = NSImage(named: NSImage.Name(rawValue: "StatusBarButtonImage"))
@@ -62,9 +64,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                              target: self,
                              action: #selector(AppDelegate.togglePopover(_:)))
         hotKey5.register()
+        
+        guard let keyCombo3 = KeyCombo(doubledCocoaModifiers: .command) else { return }
+        let hotKey3 = HotKey(identifier: "CommandDoubleTap123",
+                             keyCombo: keyCombo3,
+                             target: self,
+                             action: #selector(ViewController.toggleTweet(_:)))
+        hotKey3.register()
     }
     func applicationWillFinishLaunching(_ notification: Notification) {
      
+        
     }
     @objc func handleEvent(_ event: NSAppleEventDescriptor!, withReplyEvent: NSAppleEventDescriptor!) {
         Swifter.handleOpenURL(URL(string: event.paramDescriptor(forKeyword: AEKeyword(keyDirectObject))!.stringValue!)!)
@@ -74,6 +84,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     @objc func togglePopover(_ sender: AnyObject?) {
         
+        
+        NSRunningApplication.current.activate(options: NSApplication.ActivationOptions.activateIgnoringOtherApps)
+     //   Popover.showRelativeToRect(button.bounds, ofView: button, preferredEdge: NSMinYEdge)
      //   NSApp.activate(ignoringOtherApps: true)
        // NSApp.activationPolicy()
       //  popover.behavior = .transient
@@ -101,20 +114,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         eventMonitor?.stop()
     }
     
-    func myKeyDownEvent(event: NSEvent) -> NSEvent
-    {
-  
-        if event.keyCode == 53 {
-            //popover.performClose(sender)
-            self.closePopover(event)
-            
-        }
-     
-        
-      
-            return event
-    }
-    
+   
     @objc func tappedHotKey() {
         
       

@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		7B381B5720C327DA0085700A /* Pods_TweetFast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D2CF640E037FA990F95A442 /* Pods_TweetFast.framework */; };
-		7B381B5820C327DA0085700A /* Pods_TweetFast.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8D2CF640E037FA990F95A442 /* Pods_TweetFast.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7B381B5C20C43EF50085700A /* source.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7B381B5B20C43EF50085700A /* source.gif */; };
 		7B3918D620BAEC9400F583A5 /* tweet.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B3918D520BAEC9400F583A5 /* tweet.mp3 */; };
 		7B4F8E8220C51F6D00CC043F /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4F8E8120C51F6D00CC043F /* Reachability.swift */; };
@@ -49,8 +48,6 @@
 		7BCE131D20B689BD00612237 /* SwifterFavorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCE12F620B689BC00612237 /* SwifterFavorites.swift */; };
 		7BCE131E20B689BD00612237 /* SwifterTrends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCE12F720B689BC00612237 /* SwifterTrends.swift */; };
 		7BCE131F20B689BD00612237 /* Dictionary++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCE12F820B689BD00612237 /* Dictionary++.swift */; };
-		7BCE132720B6962300612237 /* SwifterMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BCE132620B6962300612237 /* SwifterMac.framework */; };
-		7BCE132B20B696B700612237 /* SwifterMac.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7BCE132620B6962300612237 /* SwifterMac.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7BCE132E20B6A72200612237 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCE132D20B6A72200612237 /* EventMonitor.swift */; };
 		7BE3DE0A20B1D60E00E931CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE3DE0920B1D60E00E931CD /* AppDelegate.swift */; };
 		7BE3DE0C20B1D60E00E931CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE3DE0B20B1D60E00E931CD /* ViewController.swift */; };
@@ -59,7 +56,6 @@
 		7BE3DE1D20B1D60E00E931CD /* MacTweeterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE3DE1C20B1D60E00E931CD /* MacTweeterTests.swift */; };
 		7BE3DE2820B1D60E00E931CD /* MacTweeterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE3DE2720B1D60E00E931CD /* MacTweeterUITests.swift */; };
 		7BE3DE3B20B1D7F300E931CD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7BE3DE3A20B1D7F300E931CD /* GoogleService-Info.plist */; };
-		99AB06C124A186C6E9B29A59 /* Pods_TweetFast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D2CF640E037FA990F95A442 /* Pods_TweetFast.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,14 +76,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		7BCE132C20B696B700612237 /* Embed Frameworks */ = {
+		7BD6B1CF20D3C01B00A56D97 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7B381B5820C327DA0085700A /* Pods_TweetFast.framework in Embed Frameworks */,
-				7BCE132B20B696B700612237 /* SwifterMac.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,6 +93,7 @@
 		7B3918D520BAEC9400F583A5 /* tweet.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tweet.mp3; sourceTree = "<group>"; };
 		7B4F8E8120C51F6D00CC043F /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		7B639D0820C325FB006883BD /* Magnet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Magnet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B8D59DD20D389EB00D47196 /* TweetFast.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TweetFast.entitlements; sourceTree = "<group>"; };
 		7BCE12D120B689B900612237 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = "../../../../../Downloads/Swifter-master 2/Sources/Utils.swift"; sourceTree = "<group>"; };
 		7BCE12D320B689B900612237 /* SwifterHTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwifterHTTPRequest.swift; path = "../../../../../Downloads/Swifter-master 2/Sources/SwifterHTTPRequest.swift"; sourceTree = "<group>"; };
 		7BCE12D420B689B900612237 /* Data++.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Data++.swift"; path = "../../../../../Downloads/Swifter-master 2/Sources/Data++.swift"; sourceTree = "<group>"; };
@@ -137,7 +132,6 @@
 		7BCE12F620B689BC00612237 /* SwifterFavorites.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwifterFavorites.swift; path = "../../../../../Downloads/Swifter-master 2/Sources/SwifterFavorites.swift"; sourceTree = "<group>"; };
 		7BCE12F720B689BC00612237 /* SwifterTrends.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwifterTrends.swift; path = "../../../../../Downloads/Swifter-master 2/Sources/SwifterTrends.swift"; sourceTree = "<group>"; };
 		7BCE12F820B689BD00612237 /* Dictionary++.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Dictionary++.swift"; path = "../../../../../Downloads/Swifter-master 2/Sources/Dictionary++.swift"; sourceTree = "<group>"; };
-		7BCE132620B6962300612237 /* SwifterMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwifterMac.framework; sourceTree = "<group>"; };
 		7BCE132D20B6A72200612237 /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
 		7BE3DE0620B1D60E00E931CD /* TweetFast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TweetFast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BE3DE0920B1D60E00E931CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -167,7 +161,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B381B5720C327DA0085700A /* Pods_TweetFast.framework in Frameworks */,
-				99AB06C124A186C6E9B29A59 /* Pods_TweetFast.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +168,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BCE132720B6962300612237 /* SwifterMac.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,12 +258,12 @@
 		7BE3DDFD20B1D60E00E931CD = {
 			isa = PBXGroup;
 			children = (
+				7B8D59DD20D389EB00D47196 /* TweetFast.entitlements */,
 				7BCE12D020B689A400612237 /* Sources */,
 				7BE3DE0820B1D60E00E931CD /* MacTweeter */,
 				7BE3DE1B20B1D60E00E931CD /* MacTweeterTests */,
 				7BE3DE2620B1D60E00E931CD /* MacTweeterUITests */,
 				7BE3DE0720B1D60E00E931CD /* Products */,
-				7BCE132620B6962300612237 /* SwifterMac.framework */,
 				7BCE132820B6964000612237 /* Frameworks */,
 				E15127F9282A87079813CF34 /* Pods */,
 			);
@@ -383,8 +375,8 @@
 				7BE3DE0220B1D60E00E931CD /* Sources */,
 				7BE3DE0320B1D60E00E931CD /* Frameworks */,
 				7BE3DE0420B1D60E00E931CD /* Resources */,
-				7BCE132C20B696B700612237 /* Embed Frameworks */,
 				A089C0E8EBBCCF135190FAF3 /* [CP] Embed Pods Frameworks */,
+				7BD6B1CF20D3C01B00A56D97 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -443,6 +435,7 @@
 				TargetAttributes = {
 					7BE3DE0520B1D60E00E931CD = {
 						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = D963CTM6HT;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
@@ -452,17 +445,20 @@
 					};
 					7BE3DE1720B1D60E00E931CD = {
 						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = D963CTM6HT;
 						ProvisioningStyle = Automatic;
+						TestTargetID = 7BE3DE0520B1D60E00E931CD;
 					};
 					7BE3DE2220B1D60E00E931CD = {
 						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = D963CTM6HT;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 7BE3DE0520B1D60E00E931CD;
 					};
 				};
 			};
 			buildConfigurationList = 7BE3DE0120B1D60E00E931CD /* Build configuration list for PBXProject "TweetFast" */;
-			compatibilityVersion = "Xcode 8.0";
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -697,6 +693,7 @@
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -745,7 +742,9 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -754,7 +753,7 @@
 			baseConfigurationReference = FB6A75866FC2537CC3799D89 /* Pods-TweetFast.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = MacTweeter/MacTweeter.entitlements;
+				CODE_SIGN_ENTITLEMENTS = TweetFast.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -764,8 +763,11 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = MacTweeter/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.app360.mactweeter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -779,7 +781,7 @@
 			baseConfigurationReference = BD5348D026BF7FC1ABDC4F66 /* Pods-TweetFast.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = MacTweeter/MacTweeter.entitlements;
+				CODE_SIGN_ENTITLEMENTS = TweetFast.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -789,8 +791,11 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = MacTweeter/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.app360.mactweeter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -812,11 +817,16 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = MacTweeterTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.app360.MacTweeterTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TweetFast.app/Contents/MacOS/TweetFast";
 			};
 			name = Debug;
 		};
@@ -833,11 +843,16 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = MacTweeterTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.app360.MacTweeterTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TweetFast.app/Contents/MacOS/TweetFast";
 			};
 			name = Release;
 		};
@@ -849,7 +864,11 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = D963CTM6HT;
 				INFOPLIST_FILE = MacTweeterUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.app360.MacTweeterUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -865,7 +884,11 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = D963CTM6HT;
 				INFOPLIST_FILE = MacTweeterUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.app360.MacTweeterUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
